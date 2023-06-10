@@ -9,9 +9,11 @@ and install the dependencies
 ```
 
 
-``
+```
 npm install
 ```
+
+
 
 ### Prerequisites
 You need git to clone the repository. You can get git from
@@ -21,22 +23,23 @@ A number of node.js tools is necessary to initialize and test the project. You m
 
 #### MongoDB
 The project uses MongoDB as a database. If you are on Mac and using Homebrew package manager the installation is as simple as `brew install mongodb`.
+For further information about installing MONGO-DB you can directly visit their site.
 
-#### Apidoc
-To install run `npm install apidoc -g`.
 
 ### Start the MongoDB server
 First we need to create the `db` directory where the database files will live in. In your terminal navigate to the `root` of your system by doing `cd ..` until you reach the top directory. You can create the directory by running `sudo mkdir -p /data/db`. Now open a different tab in your terminal and run `mongod` to start the Mongo server.
+
+### ENV Variables
+To see the app working you neewd to configure env variables i.e Cloudinary, MONGO-ATLAS, MAPBOX.
+You can avoid MONGO Atlas by using local mongo-db for which i have already configured the code.
 
 ### Run the Application
 
 The project is preconfigured with a simple development web server. The simplest way to start this server is:
 
-    npm start
+    npm start build
 
-### Generate API documentation
 
-    npm run doc
 
 The command will generate a /doc folder that will contain an index.html file. Open it in any browser. The file contains information about API routes.
 
