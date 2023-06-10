@@ -23,7 +23,7 @@ For further information about installing MONGO-DB you can directly visit their s
 
 
 ### Start the MongoDB server
-First we need to create the `db` directory where the database files will live in. In your terminal navigate to the `root` of your system by doing `cd ..` until you reach the top directory. You can create the directory by running `sudo mkdir -p /data/db`. Now open a different tab in your terminal and run `mongod` to start the Mongo server.
+For local mongo-db server you need to install mongo-database & mongo shell. For further info you can visit MONGO-DB page.
 
 ### ENV Variables
 To see the app working you neewd to configure env variables i.e Cloudinary, MONGO-ATLAS, MAPBOX.
